@@ -1,0 +1,206 @@
+/* 
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+}
+
+.logo {
+  color: #2f855a;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #2f855a;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-container button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-title {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #2f855a;
+}
+
+.restaurant-list,
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}  */
+
+/* --- Global Reset & Font --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* --- Navbar --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2f855a;
+  text-decoration: none;
+}
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  color: #2f855a;
+}
+
+/* --- Hero / Search Banner --- */
+.hero {
+  background: #e2e8f0;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #2f855a;
+}
+.search-container {
+  display: inline-flex;
+  width: 100%;
+  max-width: 600px;
+}
+.search-container input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 999px 0 0 999px;
+  outline: none;
+  font-size: 1rem;
+}
+.search-container button {
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: 0 999px 999px 0;
+  background: #e53e3e;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* --- Sections Titles --- */
+.top-restaurants h3,
+.results h3 {
+  margin: 2rem 2rem 1rem;
+  font-size: 1.5rem;
+  color: #2f855a;
+}
+
+/* --- Cards Grid --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem 2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  text-align: left;
+}
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.card h4 {
+  margin: 0.75rem 1rem 0.25rem;
+  font-size: 1.1rem;
+}
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* --- No Results Fallback --- */
+.no-results {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+.add-btn {
+  background-color: #e53e3e;   /* your red action color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #c53030;   /* darker red on hover */
+}

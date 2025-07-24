@@ -1,0 +1,128 @@
+/* Checkout.css */
+
+.checkout {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.checkout h2 {
+  text-align: center;
+  color: #2e7d32; /* dark green */
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.address-form,
+.order-summary {
+  margin-bottom: 25px;
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f6fff6; /* very light green */
+}
+
+.address-form h3,
+.order-summary h3 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 6px;
+}
+
+.address-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1.8px solid #a5d6a7; /* lighter green */
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.address-form input:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 6px #2e7d32aa;
+  background-color: #e8f5e9;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c8e6c9;
+  padding-bottom: 10px;
+}
+
+.order-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #a5d6a7;
+}
+
+.order-item div p {
+  margin: 3px 0;
+}
+
+.order-item strong {
+  font-size: 1.1rem;
+  color: #1b5e20; /* darker green */
+}
+
+.order-item em {
+  font-size: 0.9rem;
+  color: #4caf50; /* medium green */
+}
+
+.order-summary h4 {
+  text-align: right;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2e7d32;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #d32f2f; /* red */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.4);
+}
+
+.confirm-btn:hover {
+  background-color: #b71c1c;
+  box-shadow: 0 6px 18px rgba(183, 28, 28, 0.6);
+}
+
+@media (max-width: 480px) {
+  .checkout {
+    padding: 20px 15px;
+  }
+
+  .order-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .confirm-btn {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
+}

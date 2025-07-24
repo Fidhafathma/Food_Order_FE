@@ -1,0 +1,96 @@
+/* Profile.css */
+
+body {
+  background-color: #f5f8f7; /* very light greenish white */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff; /* pure white card */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 100, 50, 0.15); /* subtle green shadow */
+  border: 1px solid #c2dabd; /* light green border */
+}
+
+.profile-container h2 {
+  color: #89d79b; /* dark green */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.profile-container label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #2a7f3e;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="email"],
+.profile-container input[type="tel"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1rem;
+  border: 2px solid #a6d785; /* light green border */
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.profile-container input[type="text"]:focus,
+.profile-container input[type="email"]:focus,
+.profile-container input[type="tel"]:focus {
+  border-color: #2a7f3e; /* dark green on focus */
+  outline: none;
+  background-color: #e6f0e6; /* very light green background */
+}
+
+.profile-container input[disabled] {
+  background-color: #f0f0f0;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.profile-container button {
+  padding: 0.6rem 1.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 100, 50, 0.3);
+}
+
+.profile-container button:hover {
+  opacity: 0.9;
+}
+
+/* Green Save button */
+.profile-container button.save-btn {
+  background-color: #2a7f3e;
+  color: white;
+}
+
+/* Red Cancel button */
+.profile-container button.cancel-btn {
+  background-color: #d94a3d;
+  color: white;
+}
+
+/* Edit button (green outline) */
+.profile-container button.edit-btn {
+  background-color: white;
+  color: #2a7f3e;
+  border: 2px solid #2a7f3e;
+}
+
+.profile-container button.edit-btn:hover {
+  background-color: #2a7f3e;
+  color: white;
+}

@@ -1,0 +1,92 @@
+/* Landing.css */
+
+.landing-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 80px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 600px;
+}
+
+.app-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #e53e3e; 
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #4a5568; /* dark gray */
+  margin-bottom: 32px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.button-primary {
+  background-color: #2f855a; /* green */
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: #276749; /* darker green */
+}
+
+.button-secondary {
+  background-color: #2f855a; /* red */
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+  background-color: #276749; /* darker red */
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-section img {
+  max-width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .left-section, .right-section {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .app-title {
+    font-size: 3rem;
+  }
+}
