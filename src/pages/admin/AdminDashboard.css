@@ -1,0 +1,195 @@
+
+.dashboard {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Header Styling */
+.dashboard-header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #2d3436;
+}
+
+.dashboard-header p {
+    margin: 5px 0 0;
+    color: #636e72;
+}
+
+/* Stats Cards */
+.stats-cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 24px;
+    color: #00b894;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    color: #00b894;
+    margin: 0;
+    font-size: 24px;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #636e72;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #dfe6e9;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #2d3436;
+    transition: 0.2s ease;
+}
+
+.tab:hover {
+    background-color: #b2bec3;
+}
+
+.tab.active {
+    background-color: #00b894;
+    color: white;
+}
+
+/* Full Width Card Layout */
+.full-width-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.full-width-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    width: 100%;
+}
+
+.card-details {
+    flex: 1;
+}
+
+.card-details p {
+    margin: 6px 0;
+    color: #2d3436;
+    font-size: 0.95rem;
+}
+
+.card-details p strong {
+    color: #2d3436;
+}
+
+/* Delete Button - Small */
+.delete-btn.small-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    width: auto; /* Keeps it compact */
+    max-width: 120px; /* Not even 1/4th screen */
+    white-space: nowrap;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn.small-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.03);
+}
+
+/* Restaurant Section */
+.restaurant-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.menu-toggle-btn {
+    margin-top: 10px;
+    background-color: #27ae60; /* Green for "View Menu" */
+    color: white;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-toggle-btn:hover {
+    transform: scale(1.03);
+}
+
+
+.menu-list {
+    margin-top: 12px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    background-color: #f1f2f6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}

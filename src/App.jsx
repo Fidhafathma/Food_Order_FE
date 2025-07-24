@@ -22,6 +22,7 @@ import ManageMenu from "./pages/owner/Managemenu";
 import AddFood from "./pages/owner/AddFood";
 import EditFood from "./pages/owner/EditFood";
 import Orders from "./pages/owner/Orders";
+import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 
 function App() {
   
@@ -47,6 +48,8 @@ function App() {
         <Route path="/owner/restaurants/:restaurantId/edit-food/:foodId" element={<EditFood />} />
         <Route path="/owner/orders" element={<Orders/>}/>
         {/* <Route path="/orders/:id" element={<Orders />} /> */}
+
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
