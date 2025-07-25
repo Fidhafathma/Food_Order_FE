@@ -92,7 +92,7 @@ const AdminDashboard = () => {
     return (
         <div className="dashboard">
             <header className="dashboard-header">
-                <h1>Admin Dashboard</h1>
+                <h1>Welcome!</h1>
                 <p>Manage your food ordering platform</p>
             </header>
 
